@@ -1,13 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  background: #005C97;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+font-family: 'Josefin Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+
+}
+.ticker {
+  position: relative;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: white;
+  width: 200px;
+  padding: 20px;
+border-radius: 20px;
+box-shadow: 0px 20px 70px 20px;
+}
+
+.reset {
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: white;
+  width: auto;
+  padding: 20px;
+border-radius: 20px;
+box-shadow: 0px 20px 70px 20px;
+transition: 1s;
+}
+.reset:hover {
+  background-color: red;
+  transition: 1s;
 }
