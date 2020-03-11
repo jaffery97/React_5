@@ -30,6 +30,9 @@ class Ticker extends Component {
 
   }
 
+
+
+
   reset = () => {
     this.setState({
       count: this.state.count = 0
