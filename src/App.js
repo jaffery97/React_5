@@ -21,8 +21,13 @@ class Ticker extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    //this is where we check it's true or false using while
-    while(nextState.count % 3 === 0) return true;
+    //this is where we check it's true or false using if else
+
+    if (nextState.count % 3 === 0) {return true;}
+    else {
+      return false;
+    }
+
   }
 
   reset = () => {
@@ -47,8 +52,13 @@ class Ticker extends Component {
       className = "reset" > Reset < /button>
 
 
-      <
-      /div>
+      <h1 className="footer"> <hr style={{
+          height: .5,
+          width: 230,
+          borderColor : 'red'
+      }}/> React_5 Project | Copyright @ <a href="https://mhjafory.com"> MH Jafory </a></h1>
+
+      </div>
 
 
 
@@ -58,3 +68,5 @@ class Ticker extends Component {
 };
 
 export default Ticker;
+
+  //while(nextState.count % 3 === 0) return true;

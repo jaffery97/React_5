@@ -45,11 +45,26 @@ box-shadow: 0px 20px 70px 20px;
   background-color: white;
   width: auto;
   padding: 20px;
-border-radius: 20px;
-box-shadow: 0px 20px 70px 20px;
-transition: 1s;
+  border-radius: 20px;
+  box-shadow: 0px 20px 70px 20px;
+  transition: 1s;
 }
 .reset:hover {
-  background-color: red;
+  background-color: green;
+  color: white;
   transition: 1s;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  bottom: -400px ;
+}
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+
 }
